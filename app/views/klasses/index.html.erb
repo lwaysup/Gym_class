@@ -1,0 +1,10 @@
+<% @klasses.each do |klass| %>
+    <%= link_to(klass.date, "/klasses/#{klass.id}") %>
+    <!-- <h4><%= link_to 'Index', "/users/" %> </h4> -->
+    
+    <h4><%= link_to 'List of Classes', "/klasses/index"%>
+    <%= link_to 'New post', "/klasses/new" %></h4>
+    <br />
+    <h4><%= link_to 'Edit', "/klasses/edit" %>
+        
+<% end %>

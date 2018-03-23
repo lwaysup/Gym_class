@@ -1,0 +1,6 @@
+<%= form_for @entry, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_field :email %>
+    <%= f.text_field :date_taken %>
+    <%= f.submit "Create" %>
+<% end %>

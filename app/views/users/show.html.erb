@@ -1,0 +1,12 @@
+ <h3><%="Hi #{@user.name}" %></h3>
+ 
+ <h4>These are your classes: </h4>
+  
+ <% @user_res.each do |reserv| %>
+     <%= reserv.klass.name %>
+ <% end %>
+ <h4><%= link_to 'Edit', "/users/edit" %>
+ <h4><%= link_to 'Update', "/users/update" %>
+
+  
+  
